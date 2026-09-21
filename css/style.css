@@ -1,0 +1,260 @@
+ @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+ @media only screen and (max-width: 600px) {
+    body{
+        background-color: lightblue;
+    }
+ }
+*{
+    font-family: 'Michroma', sans-serif;
+}
+
+ header {
+     display: flex;
+     align-items: center;
+     background-color: #2C2F33;
+     justify-content: space-between;
+     position: sticky;
+     top: 0;
+ }
+
+ .navsystem {
+     display: flex;
+     font-size: 2rem;
+     width: 75%;
+     justify-content: space-between;
+     padding: 0 30px;
+ }
+
+ body {
+     background-color: #23272E;
+     margin: 0;
+ }
+
+ h1 {
+     text-align: center;
+     font-size: 80px;
+     margin-bottom: -50px;
+     color: white;
+     text-shadow:
+         0 0 4px #00ff33,
+         0 0 10px #00ff33,
+         0 0 20px #00ff33;
+ }
+
+ h2 {
+     text-align: center;
+     color: white;
+     font-size: 60px;
+     text-shadow:
+         0 0 4px #AF3335,
+         0 0 10px #AF3335,
+         0 0 20px #AF3335;
+
+ }
+
+ a {
+     text-decoration: none;
+     color: #DDDDDD;
+         transition: color 0.3s ease,
+                text-shadow 0.3s ease,
+                transform 0.3s ease;
+ }
+a:hover {
+    color: #00FF32;
+    text-shadow: 0 0 8px #00FF32;
+}
+a:focus-visible {
+    outline: 3px solid #00FF32;
+    outline-offset: 4px;
+}
+ .naast {
+     display: flex;
+     padding-left: 15px;
+ }
+
+ ul {
+     margin-left: auto;
+     width: 40%;
+     font-size: 25px;
+     color: #E0E0E0;
+     margin-right: 15px;
+ }
+
+ .placeholder-laptop {
+     display: flex;
+     margin-left: 300px;
+     width: 500px;
+     height: 500px;
+ }
+  .placeholder-laptopbuy {
+     width: 300px;
+     height: auto;
+     border-style: solid;
+     border-radius: 10px;
+     border-color: white;
+     box-shadow:
+         0 0 4px #00ff33,
+         0 0 10px #00ff33,
+         0 0 20px #00ff33;
+ }
+  .prijs {
+     font-size: 2rem;
+     color: #E0E0E0;
+     text-align: left;
+     width: 40%;
+     margin-left: 50px;
+     margin-bottom: -30px;
+ }
+  .productbeschrijving {
+     font-size: 2rem;
+     color: #E0E0E0;
+     margin-left: 50px;
+ }
+  .product1 {
+     display: flex;
+     background-color: #2C2F33;
+ }
+ .placeholder-storefront {
+     width: 500px;
+     height: 300px;
+     margin-top: 40px;
+     margin-left: 15px;
+     border-style: solid;
+     box-shadow:
+         0 0 4px #00ff33,
+         0 0 10px #00ff33,
+         0 0 20px #00ff33;
+ }
+ .img3 {
+     width: 200px;
+     height: auto;
+ }
+
+ .beschrijving {
+     font-size: 25px;
+     color: #E0E0E0;
+     text-align: left;
+     width: 40%;
+ }
+ .text2 {
+     display: flex;
+     margin-left: 15px;
+ }
+
+ .placeholder-daan {
+     width: 500px;
+     height: 550px;
+     margin-top: 40px;
+     margin-left: 300px;
+     border-style: solid;
+     box-shadow:
+         0 0 4px #00ff33,
+         0 0 10px #00ff33,
+         0 0 20px #00ff33;
+ }
+ .naamtext {
+     color: white;
+     font-size: 35px;
+     margin-left: 50px;
+     text-shadow:
+         0 0 4px #AF3335,
+         0 0 10px #AF3335,
+         0 0 20px #AF3335;
+ }
+
+ .placeholder-pcbuy {
+     width: 300px;
+     height: auto;
+     border-style: solid;
+     border-radius: 10px;
+     border-color: white;
+     box-shadow:
+         0 0 4px #00ff33,
+         0 0 10px #00ff33,
+         0 0 20px #00ff33;
+ }
+
+ .placeholder-headsetbuy {
+     width: 300px;
+     height: auto;
+     border-style: solid;
+     border-radius: 10px;
+     border-color: white;
+     box-shadow:
+         0 0 4px #00ff33,
+         0 0 10px #00ff33,
+         0 0 20px #00ff33;
+ }
+
+ .laptoptext {
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .pctext {
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .headsettext {
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .productbeschrijving {
+     font-size: 2rem;
+     color: #E0E0E0;
+     margin-left: 50px;
+ }
+ .nieuwsbrief-knop {
+    background-color: #2C2F33;
+    color: #E0E0E0;
+    border: 2px solid #00FF32;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 15px;
+
+    transition: background-color 0.3s ease,
+                box-shadow 0.3s ease,
+                transform 0.3s ease;
+}
+
+.nieuwsbrief-knop:hover {
+    background-color: #00FF32;
+    color: #23272E;
+    box-shadow: 0 0 15px #00FF32;
+    transform: scale(1.05);
+}
+
+.nieuwsbrief-knop:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+.locatie {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.locatie iframe {
+    width: 600px;
+    height: 400px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.adres {
+    color: #E0E0E0;
+    margin-left: 15px;
+}
+.margin-left{
+    margin-left: 15px;
+}
+iframe{
+    margin-bottom: 15px;
+}
+.color{
+    background-color: #00FF32;
+    color: #AF3335;
+}
