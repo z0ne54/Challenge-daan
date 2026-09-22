@@ -30,8 +30,8 @@
  h1 {
      text-align: center;
      font-size: 80px;
-     margin-bottom: -50px;
      color: white;
+     margin-bottom: 10px;
      text-shadow:
          0 0 4px #00ff33,
          0 0 10px #00ff33,
@@ -42,6 +42,7 @@
      text-align: center;
      color: white;
      font-size: 60px;
+     margin-top: 0;
      text-shadow:
          0 0 4px #AF3335,
          0 0 10px #AF3335,
@@ -65,8 +66,11 @@ a:focus-visible {
     outline-offset: 4px;
 }
  .naast {
-     display: flex;
-     padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 15px;
  }
 
  ul {
@@ -78,21 +82,8 @@ a:focus-visible {
  }
 
  .placeholder-laptop {
-     display: flex;
-     margin-left: 300px;
      width: 500px;
      height: 500px;
- }
-  .placeholder-laptopbuy {
-     width: 300px;
-     height: auto;
-     border-style: solid;
-     border-radius: 10px;
-     border-color: white;
-     box-shadow:
-         0 0 4px #00ff33,
-         0 0 10px #00ff33,
-         0 0 20px #00ff33;
  }
   .prijs {
      font-size: 2rem;
@@ -142,7 +133,6 @@ a:focus-visible {
      width: 500px;
      height: 550px;
      margin-top: 40px;
-     margin-left: 300px;
      border-style: solid;
      box-shadow:
          0 0 4px #00ff33,
@@ -159,7 +149,9 @@ a:focus-visible {
          0 0 20px #AF3335;
  }
 
- .placeholder-pcbuy {
+ .placeholder-pcbuy,
+ .placeholder-headsetbuy,
+ .placeholder-laptopbuy {
      width: 300px;
      height: auto;
      border-style: solid;
@@ -171,37 +163,12 @@ a:focus-visible {
          0 0 20px #00ff33;
  }
 
- .placeholder-headsetbuy {
-     width: 300px;
-     height: auto;
-     border-style: solid;
-     border-radius: 10px;
-     border-color: white;
-     box-shadow:
-         0 0 4px #00ff33,
-         0 0 10px #00ff33,
-         0 0 20px #00ff33;
- }
-
- .laptoptext {
-     flex-direction: column;
-     align-items: center;
- }
-
- .pctext {
-     flex-direction: column;
-     align-items: center;
- }
-
+ .laptoptext,
+ .pctext,
  .headsettext {
      flex-direction: column;
      align-items: center;
- }
-
- .productbeschrijving {
-     font-size: 2rem;
-     color: #E0E0E0;
-     margin-left: 50px;
+     display: flex;
  }
  .nieuwsbrief-knop {
     background-color: #2C2F33;
@@ -259,13 +226,6 @@ iframe{
 
 
 @media only screen and (max-width: 600px) {
-    .naast{
-        flex-direction: column;
-    }
-    .navsystem{
-        flex-direction: column;
-        font-size: 100%;
-    }
     a{
         margin: 10px;
     }
@@ -281,7 +241,7 @@ iframe{
         width: 100%;
         padding: 0;
         align-items: center;
-        font-size: 1rem;
+        font-size: 100%;
     }
 
     .naast {
@@ -309,9 +269,11 @@ iframe{
         margin-left: 0;
     }
     .placeholder-storefront{
-        width: 80%;
-        max-width: 100%;
-        height: auto;
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
     }
     .locatie iframe {
         width: 100%;
@@ -340,6 +302,9 @@ iframe{
 
     h2 {
         font-size: 2rem;
+    }
+    .paddingtop{
+        margin-top: 25px;
     }
 }
 
