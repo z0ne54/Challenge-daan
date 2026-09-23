@@ -72,6 +72,12 @@ a:focus-visible {
     gap: 30px;
     padding: 15px;
  }
+  .text2 {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-right: 20px;
+ }
 
  ul {
      margin-left: auto;
@@ -124,11 +130,6 @@ a:focus-visible {
      text-align: left;
      width: 40%;
  }
- .text2 {
-     display: flex;
-     margin-left: 15px;
- }
-
  .placeholder-daan {
      width: 500px;
      height: 550px;
