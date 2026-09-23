@@ -1,9 +1,9 @@
  @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
-*{
-    font-family: 'Michroma', sans-serif;
-    box-sizing: border-box;
-}
+ * {
+     font-family: 'Michroma', sans-serif;
+     box-sizing: border-box;
+ }
 
  header {
      display: flex;
@@ -53,30 +53,33 @@
  a {
      text-decoration: none;
      color: #DDDDDD;
-         transition: color 0.3s ease,
-                text-shadow 0.3s ease,
-                transform 0.3s ease;
+     transition: color 0.3s ease,
+         text-shadow 0.3s ease,
+         transform 0.3s ease;
  }
-a:hover {
-    color: #00FF32;
-    text-shadow: 0 0 8px #00FF32;
-}
-a:focus-visible {
-    outline: 3px solid #00FF32;
-    outline-offset: 4px;
-}
+
+ a:hover {
+     color: #00FF32;
+     text-shadow: 0 0 8px #00FF32;
+ }
+
+ a:focus-visible {
+     outline: 3px solid #00FF32;
+     outline-offset: 4px;
+ }
+
  .naast {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    padding: 15px;
- }
-  .text2 {
      display: flex;
      justify-content: space-between;
      align-items: center;
-     margin-right: 20px;
+     gap: 30px;
+     padding: 15px;
+ }
+
+ .text2 {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
  }
 
  ul {
@@ -91,7 +94,8 @@ a:focus-visible {
      width: 500px;
      height: 500px;
  }
-  .prijs {
+
+ .prijs {
      font-size: 2rem;
      color: #E0E0E0;
      text-align: left;
@@ -99,15 +103,18 @@ a:focus-visible {
      margin-left: 50px;
      margin-bottom: -30px;
  }
-  .productbeschrijving {
+
+ .productbeschrijving {
      font-size: 2rem;
      color: #E0E0E0;
      margin-left: 50px;
  }
-  .product1 {
+
+ .product1 {
      display: flex;
      background-color: #2C2F33;
  }
+
  .placeholder-storefront {
      width: 500px;
      height: 300px;
@@ -119,6 +126,7 @@ a:focus-visible {
          0 0 10px #00ff33,
          0 0 20px #00ff33;
  }
+
  .img3 {
      width: 200px;
      height: auto;
@@ -130,16 +138,19 @@ a:focus-visible {
      text-align: left;
      width: 40%;
  }
+
  .placeholder-daan {
      width: 500px;
      height: 550px;
      margin-top: 40px;
+     margin-right: 40px;
      border-style: solid;
      box-shadow:
          0 0 4px #00ff33,
          0 0 10px #00ff33,
          0 0 20px #00ff33;
  }
+
  .naamtext {
      color: white;
      font-size: 35px;
@@ -171,142 +182,151 @@ a:focus-visible {
      align-items: center;
      display: flex;
  }
+
  .nieuwsbrief-knop {
-    background-color: #2C2F33;
-    color: #E0E0E0;
-    border: 2px solid #00FF32;
-    padding: 12px 24px;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-left: 15px;
+     background-color: #2C2F33;
+     color: #E0E0E0;
+     border: 2px solid #00FF32;
+     padding: 12px 24px;
+     border-radius: 8px;
+     cursor: pointer;
+     margin-left: 15px;
 
-    transition: background-color 0.3s ease,
-                box-shadow 0.3s ease,
-                transform 0.3s ease;
-}
+     transition: background-color 0.3s ease,
+         box-shadow 0.3s ease,
+         transform 0.3s ease;
+ }
 
-.nieuwsbrief-knop:hover {
-    background-color: #00FF32;
-    color: #23272E;
-    box-shadow: 0 0 15px #00FF32;
-    transform: scale(1.05);
-}
+ .nieuwsbrief-knop:hover {
+     background-color: #00FF32;
+     color: #23272E;
+     box-shadow: 0 0 15px #00FF32;
+     transform: scale(1.05);
+ }
 
-.nieuwsbrief-knop:focus-visible {
-    outline: 3px solid white;
-    outline-offset: 4px;
-}
-.locatie {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-}
+ .nieuwsbrief-knop:focus-visible {
+     outline: 3px solid white;
+     outline-offset: 4px;
+ }
 
-.locatie iframe {
-    width: 600px;
-    height: 400px;
-    border: 0;
-    border-radius: 10px;
-}
+ .locatie {
+     display: flex;
+     gap: 40px;
+     align-items: center;
+ }
 
-.adres {
-    color: #E0E0E0;
-    margin-left: 15px;
-}
-.margin-left{
-    margin-left: 15px;
-}
-iframe{
-    margin-bottom: 15px;
-}
-.color{
-    background-color: #00FF32;
-    color: #AF3335;
-}
+ .locatie iframe {
+     width: 600px;
+     height: 400px;
+     border: 0;
+     border-radius: 10px;
+ }
+
+ .adres {
+     color: #E0E0E0;
+     margin-left: 15px;
+ }
+
+ .margin-left {
+     margin-left: 15px;
+ }
+
+ iframe {
+     margin-bottom: 15px;
+ }
+
+ .color {
+     background-color: #00FF32;
+     color: #AF3335;
+ }
 
 
 
-@media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 600px) {
      a {
-        margin: 10px;
+         margin: 10px;
      }
-    header {
-        flex-direction: column;
-    }
-    .text2{
-        flex-direction: column;
-        margin: 0;
-    }
-    .navsystem {
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-        align-items: center;
-        font-size: 100%;
-    }
 
-    .naast {
-        flex-direction: column;
-        padding: 10px;
-    }
+     header {
+         flex-direction: column;
+     }
 
-    .product1 {
-        flex-direction: column;
-    }
+     .text2 {
+         flex-direction: column;
+         margin: 0;
+     }
 
-    .locatie {
-        flex-direction: column;
-        gap: 20px;
-    }
+     .navsystem {
+         flex-direction: column;
+         width: 100%;
+         padding: 0;
+         align-items: center;
+         font-size: 100%;
+     }
 
-    .placeholder-laptop,
-    .placeholder-laptopbuy,
-    .placeholder-daan,
-    .placeholder-pcbuy,
-    .placeholder-headsetbuy {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        margin-left: 0;
-    }
-    .placeholder-storefront{
-    width: 80%;
-    max-width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    }
-    .locatie iframe {
-        width: 100%;
-        max-width: 100%;
-        height: 300px;
-    }
+     .naast {
+         flex-direction: column;
+         padding: 10px;
+     }
 
-    .beschrijving,
-    ul,
-    .prijs {
-        width: auto;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+     .product1 {
+         flex-direction: column;
+     }
 
-    .naamtext,
-    .productbeschrijving {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+     .locatie {
+         flex-direction: column;
+         gap: 20px;
+     }
 
-    h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0;
-    }
+     .placeholder-laptop,
+     .placeholder-laptopbuy,
+     .placeholder-daan,
+     .placeholder-pcbuy,
+     .placeholder-headsetbuy {
+         width: 100%;
+         max-width: 100%;
+         height: auto;
+         margin-left: 0;
+     }
 
-    h2 {
-        font-size: 2rem;
-    }
-    .paddingtop{
-        margin-top: 25px;
-    }
-}
+     .placeholder-storefront {
+         width: 80%;
+         max-width: 100%;
+         height: auto;
+         margin-left: auto;
+         margin-right: auto;
+     }
 
+     .locatie iframe {
+         width: 100%;
+         max-width: 100%;
+         height: 300px;
+     }
 
+     .beschrijving,
+     ul,
+     .prijs {
+         width: auto;
+         margin-left: 10px;
+         margin-right: 10px;
+     }
+
+     .naamtext,
+     .productbeschrijving {
+         margin-left: 10px;
+         margin-right: 10px;
+     }
+
+     h1 {
+         font-size: 2.5rem;
+         margin-bottom: 0;
+     }
+
+     h2 {
+         font-size: 2rem;
+     }
+
+     .paddingtop {
+         margin-top: 25px;
+     }
+ }
