@@ -78,7 +78,6 @@
 
  .text2 {
      display: flex;
-     justify-content: space-between;
      align-items: center;
  }
 
@@ -87,7 +86,7 @@
      width: 40%;
      font-size: 25px;
      color: #E0E0E0;
-     margin-right: 15px;
+     margin-right: 100px;
  }
 
  .placeholder-laptop {
@@ -118,8 +117,7 @@
  .placeholder-storefront {
      width: 500px;
      height: 300px;
-     margin-top: 40px;
-     margin-left: 15px;
+     margin-left: 60px;
      border-style: solid;
      box-shadow:
          0 0 4px #00ff33,
@@ -137,6 +135,7 @@
      color: #E0E0E0;
      text-align: left;
      width: 40%;
+     margin-left: 100px;
  }
 
  .placeholder-daan {
@@ -144,6 +143,7 @@
      height: 550px;
      margin-top: 40px;
      margin-right: 40px;
+     margin-left: 40px;
      border-style: solid;
      box-shadow:
          0 0 4px #00ff33,
@@ -280,13 +280,18 @@
 
      .placeholder-laptop,
      .placeholder-laptopbuy,
-     .placeholder-daan,
      .placeholder-pcbuy,
      .placeholder-headsetbuy {
          width: 100%;
          max-width: 100%;
          height: auto;
-         margin-left: 0;
+         margin-left: -5px;
+     }
+
+     .placeholder-daan{
+        width: 80%;
+        max-width: 100%;
+        height: auto;
      }
 
      .placeholder-storefront {
