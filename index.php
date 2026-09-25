@@ -1,22 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+require_once "header.php";
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>LEVELUP Hardware</title>
-</head>
 
-<body>
-    <header>
-        <img class="img3" src="img/logo.png" alt="LEVELUP Hardware" />
-        <nav class="navsystem">
-            <a href="index.html">Home</a>
-            <a href="overons.html">Over ons</a>
-            <a href="producten.html">Producten</a>
-        </nav>
-    </header>
     <h1>High-end Gaming Gear</h1>
     <h2>In Breda</h2>
     <div class="naast">
@@ -63,9 +49,6 @@
             allowfullscreen="" loading="lazy">
         </iframe>
     </section>
-    <footer>
-        <p class="color">&copy; by Rick Peeters, 2026</p>
-    </footer>
-</body>
-
-</html>
+   <?php
+require_once "footer.php";
+?>
