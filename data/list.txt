@@ -1,0 +1,9 @@
+   <ul>
+        <li>Curated Selectie: Wij verkopen alleen laptops waar we zelf achter staan.
+            Geen concessies op bouwkwaliteit of koeling.
+        </li>
+        <li>expert onderhoud: Van het vervangen van koelpasta tot complexe hardware-upgrades; wij verlengen de
+            levensduur van je machine.</li>
+        <li>Persoonlijk Advies: Geen standaard verkooppraatjes, maar eerlijk advies gebaseerd op jouw favoriete
+            games en workflow.</li>
+    </ul>

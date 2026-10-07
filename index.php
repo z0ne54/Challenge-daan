@@ -6,31 +6,23 @@ require_once "header.php";
 <h1>High-end Gaming Gear</h1>
 <h2>In Breda</h2>
 <div class="naast">
-    <p class="beschrijving">Bij LevelUp Hardware draait alles om performane.
-        Of je nu op zoek bent naar een nieuwe laptop die de nieuwste AAA-titels moeiteloos draait,
-        of je huidige rig een professionele onderhoudsbeurt nodig heeft; wij staan voor je klaar.
-        <br><br>
-        In onze fysieke winkel combineren we de nostalgische sfeer van de jaren '80 arcades met de brute kracht van
-        de hardware van morgen.
-        <br><br><br>
-        <strong>waarom kiezen voor ons?</strong>
-    </p>
+      <div class="beschrijving">
+        <?php
+		echo nl2br(file_get_contents('data/beschrijving.txt'));
+		?>
+        
+    </div>
     <img class="placeholder-laptop" src="img/laptop.webp" alt="laptop">
 </div>
 
+
 <div class="text2">
     <img class="placeholder-storefront" src="img/storefront.png" alt="storefront">
-    <ul>
-        <li>Curated Selectie: Wij verkopen alleen laptops waar we zelf achter staan.
-            Geen concessies op bouwkwaliteit of koeling.
-        </li>
-        <li>expert onderhoud: Van het vervangen van koelpasta tot complexe hardware-upgrades; wij verlengen de
-            levensduur van je machine.</li>
-        <li>Persoonlijk Advies: Geen standaard verkooppraatjes, maar eerlijk advies gebaseerd op jouw favoriete
-            games en workflow.</li>
-    </ul>
+<?php
+    echo file_get_contents('data/list.txt');
+    ?>
 </div>
-<a class="nieuwsbrief-knop" href="nieuwsbrief.html">
+<a class="nieuwsbrief-knop" href="nieuwsbrief.php">
     Aanmelden nieuwsbrief
 </a>
 <section class="locatie">
@@ -49,6 +41,8 @@ require_once "header.php";
         loading="lazy">
     </iframe>
 </section>
+
+
 <?php
 require_once "footer.php";
 ?>
