@@ -3,52 +3,52 @@ require_once "header.php";
 ?>
 
 
-    <h1>High-end Gaming Gear</h1>
-    <h2>In Breda</h2>
-    <div class="naast">
-        <p class="beschrijving">Bij LevelUp Hardware draait alles om performane.
-            Of je nu op zoek bent naar een nieuwe laptop die de nieuwste AAA-titels moeiteloos draait,
-            of je huidige rig een professionele onderhoudsbeurt nodig heeft; wij staan voor je klaar.
-            <br><br>
-            In onze fysieke winkel combineren we de nostalgische sfeer van de jaren '80 arcades met de brute kracht van
-            de hardware van morgen.
-            <br><br><br>
-            <strong>waarom kiezen voor ons?</strong>
+<h1>High-end Gaming Gear</h1>
+<h2>In Breda</h2>
+<div class="naast">
+    <p class="beschrijving">Bij LevelUp Hardware draait alles om performane.
+        Of je nu op zoek bent naar een nieuwe laptop die de nieuwste AAA-titels moeiteloos draait,
+        of je huidige rig een professionele onderhoudsbeurt nodig heeft; wij staan voor je klaar.
+        <br><br>
+        In onze fysieke winkel combineren we de nostalgische sfeer van de jaren '80 arcades met de brute kracht van
+        de hardware van morgen.
+        <br><br><br>
+        <strong>waarom kiezen voor ons?</strong>
+    </p>
+    <img class="placeholder-laptop" src="img/laptop.webp" alt="laptop">
+</div>
+
+<div class="text2">
+    <img class="placeholder-storefront" src="img/storefront.png" alt="storefront">
+    <ul>
+        <li>Curated Selectie: Wij verkopen alleen laptops waar we zelf achter staan.
+            Geen concessies op bouwkwaliteit of koeling.
+        </li>
+        <li>expert onderhoud: Van het vervangen van koelpasta tot complexe hardware-upgrades; wij verlengen de
+            levensduur van je machine.</li>
+        <li>Persoonlijk Advies: Geen standaard verkooppraatjes, maar eerlijk advies gebaseerd op jouw favoriete
+            games en workflow.</li>
+    </ul>
+</div>
+<a class="nieuwsbrief-knop" href="nieuwsbrief.html">
+    Aanmelden nieuwsbrief
+</a>
+<section class="locatie">
+    <div class="adres">
+        <h2 class="paddingtop">Waar vind je ons?</h2>
+        <p>
+            LevelUp Hardware<br>
+            Terheijdenseweg 350<br>
+            4826 AA Breda
         </p>
-        <img class="placeholder-laptop" src="img/laptop.webp" alt="laptop">
     </div>
 
-    <div class="text2">
-        <img class="placeholder-storefront" src="img/storefront.png" alt="storefront">
-        <ul>
-            <li>Curated Selectie: Wij verkopen alleen laptops waar we zelf achter staan.
-                Geen concessies op bouwkwaliteit of koeling.
-            </li>
-            <li>expert onderhoud: Van het vervangen van koelpasta tot complexe hardware-upgrades; wij verlengen de
-                levensduur van je machine.</li>
-            <li>Persoonlijk Advies: Geen standaard verkooppraatjes, maar eerlijk advies gebaseerd op jouw favoriete
-                games en workflow.</li>
-        </ul>
-    </div>
-    <a class="nieuwsbrief-knop" href="nieuwsbrief.html">
-        Aanmelden nieuwsbrief
-    </a>
-    <section class="locatie">
-        <div class="adres">
-            <h2 class="paddingtop">Waar vind je ons?</h2>
-            <p>
-                LevelUp Hardware<br>
-                Terheijdenseweg 350<br>
-                4826 AA Breda
-            </p>
-        </div>
-
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.2339398474164!2d4.777502598613233!3d51.606891071800256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c69f990d127d8b%3A0x1e825fb420ca913c!2sCurio%2C%20Terheijdenseweg%20350!5e0!3m2!1snl!2snl!4v1789550001607!5m2!1snl!2snl"
-            referrerpolicy="strict-origin-when-cross-origin" width="600" height="450" style="border: 0;"
-            allowfullscreen="" loading="lazy">
-        </iframe>
-    </section>
-   <?php
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.2339398474164!2d4.777502598613233!3d51.606891071800256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c69f990d127d8b%3A0x1e825fb420ca913c!2sCurio%2C%20Terheijdenseweg%20350!5e0!3m2!1snl!2snl!4v1789550001607!5m2!1snl!2snl"
+        referrerpolicy="strict-origin-when-cross-origin" width="600" height="450" style="border: 0;" allowfullscreen=""
+        loading="lazy">
+    </iframe>
+</section>
+<?php
 require_once "footer.php";
 ?>

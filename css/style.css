@@ -243,7 +243,7 @@
  }
 
 
-/* for phone */
+ /* for phone */
 
  @media only screen and (max-width: 600px) {
      a {
@@ -292,10 +292,10 @@
          margin-bottom: 50px;
      }
 
-     .placeholder-daan{
-        width: 80%;
-        max-width: 100%;
-        height: auto;
+     .placeholder-daan {
+         width: 80%;
+         max-width: 100%;
+         height: auto;
      }
 
      .placeholder-storefront {
