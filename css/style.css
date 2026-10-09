@@ -26,6 +26,26 @@
      background-color: #23272E;
      margin: 0;
  }
+ body.light {
+    background-color: white;
+    color: black;
+}
+body.light .product1 {
+    background-color: lightgray;
+}
+
+body.light h1,
+body.light h2,
+body.light .beschrijving,
+body.light ul,
+body.light .prijs,
+body.light .productbeschrijving,
+body.light .naamtext,
+body.light .adres,
+body.light .product1
+{
+    color: #23272e;
+}
 
  h1 {
      text-align: center;
@@ -338,4 +358,7 @@
      .paddingtop {
          margin-top: 25px;
      }
+ }
+ .margin {
+    margin-left: 100px;
  }

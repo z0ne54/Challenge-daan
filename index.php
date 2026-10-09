@@ -6,11 +6,11 @@ require_once "header.php";
 <h1>High-end Gaming Gear</h1>
 <h2>In Breda</h2>
 <div class="naast">
-      <div class="beschrijving">
+    <div class="beschrijving">
         <?php
-		echo nl2br(file_get_contents('data/beschrijving.txt'));
-		?>
-        
+        echo nl2br(file_get_contents('data/beschrijving.txt'));
+        ?>
+
     </div>
     <img class="placeholder-laptop" src="img/laptop.webp" alt="laptop">
 </div>
@@ -18,13 +18,32 @@ require_once "header.php";
 
 <div class="text2">
     <img class="placeholder-storefront" src="img/storefront.png" alt="storefront">
-<?php
+    <?php
     echo file_get_contents('data/list.txt');
     ?>
 </div>
-<a class="nieuwsbrief-knop" href="nieuwsbrief.php">
-    Aanmelden nieuwsbrief
-</a>
+<div class="margin">
+<button class="nieuwsbrief-knop" type="button" id="open-newsletter">Nieuwsbrief inschrijven</button>
+<dialog class="newsletter-dialog" id="newsletter-dialog" aria-labelledby="newsletter-title">
+    <button class="dialog-close" type="button" id="close-newsletter" aria-label="Nieuwsbrief sluiten">&times;</button>
+    <div class="newsletter-content">
+        <p class="newsletter-eyebrow">LevelUp Hardware nieuws</p>
+        <h2 id="newsletter-title">Blijf op de hoogte</h2>
+        <p>Ontvang nieuws over nieuwe hardware, aanbiedingen en gamingsetups rechtstreeks in je inbox.</p>
+
+        <form id="newsletter-form">
+            <label for="newsletter-name">Naam</label>
+            <input id="newsletter-name" name="name" type="text" autocomplete="name" placeholder="Jouw naam" required>
+
+            <label for="newsletter-email">E-mailadres</label>
+            <input id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="jij@voorbeeld.nl"
+                required>
+
+            <button class="newsletter-submit" type="submit">Inschrijven</button>
+            <p class="newsletter-status" id="newsletter-status" role="status" aria-live="polite"></p>
+        </form>
+    </div>
+</dialog>
 <section class="locatie">
     <div class="adres">
         <h2 class="paddingtop">Waar vind je ons?</h2>
@@ -41,8 +60,7 @@ require_once "header.php";
         loading="lazy">
     </iframe>
 </section>
-
-
+</div>
 <?php
 require_once "footer.php";
 ?>
