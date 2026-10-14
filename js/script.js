@@ -19,11 +19,29 @@ if (newsletterDialog && openNewsletter && closeNewsletter && newsletterForm && n
         }
     });
 
-    newsletterForm.addEventListener("submit", (event) => {
+    newsletterForm.addEventListener("submit", async (event) => {
         event.preventDefault();
-        const name = document.getElementById("newsletter-name").value.trim();
-        newsletterStatus.textContent = `Bedankt, ${name}! Je staat nu ingeschreven voor ons nieuws.`;
-        newsletterForm.reset();
+        newsletterStatus.textContent = "";
+        newsletterStatus.classList.remove("error");
+
+        try {
+            const response = await fetch(newsletterForm.action, {
+                method: "POST",
+                body: new FormData(newsletterForm),
+                headers: { Accept: "application/json" }
+            });
+            const result = await response.json();
+
+            if (!response.ok) {
+                throw new Error(result.message || "Controleer je gegevens en probeer het opnieuw.");
+            }
+
+            newsletterStatus.textContent = result.message;
+            newsletterForm.reset();
+        } catch (error) {
+            newsletterStatus.textContent = `Inschrijving niet gelukt: ${error.message}`;
+            newsletterStatus.classList.add("error");
+        }
     });
 
     if (window.location.hash === "#newsletter-dialog") {

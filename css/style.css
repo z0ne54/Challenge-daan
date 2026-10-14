@@ -216,6 +216,7 @@ body.light .afbeeldingsvermelding
      border-radius: 8px;
      cursor: pointer;
      margin-left: 15px;
+     margin-right: 15px;
 
      transition: background-color 0.3s ease,
          box-shadow 0.3s ease,

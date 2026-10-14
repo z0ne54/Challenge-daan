@@ -95,6 +95,11 @@
     color: #39ff14;
     font-size: 14px;
 }
+
+.newsletter-status.error {
+    color: #ff7676;
+}
+
 .dialog-close {
     position: absolute;
     top: 10px;
