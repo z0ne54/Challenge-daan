@@ -31,6 +31,11 @@ if (newsletterDialog && openNewsletter && closeNewsletter && newsletterForm && n
     }
 }
 
+
+
+
+
+
 const themeToggle = document.getElementById("themeToggle");
 
 if (localStorage.getItem("theme") === "light") {

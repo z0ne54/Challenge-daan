@@ -30,9 +30,7 @@
     background-color: white;
     color: black;
 }
-body.light .product1 {
-    background-color: lightgray;
-}
+
 
 body.light h1,
 body.light h2,
@@ -42,7 +40,12 @@ body.light .prijs,
 body.light .productbeschrijving,
 body.light .naamtext,
 body.light .adres,
-body.light .product1
+body.light .product1,
+body.light .productkaart h3,
+body.light .productcatalogus .productbeschrijving,
+body.light .product-prijs,
+body.light .categorie-beschrijving,
+body.light .afbeeldingsvermelding
 {
     color: #23272e;
 }
@@ -362,3 +365,149 @@ body.light .product1
  .margin {
     margin-left: 100px;
  }
+
+.productcatalogus {
+    width: min(1280px, calc(100% - 40px));
+    margin: 0 auto 60px;
+}
+
+.productcatalogus > h1 {
+    font-size: clamp(2.5rem, 7vw, 5rem);
+}
+
+.productcatalogus > h2 {
+    font-size: clamp(1.6rem, 4vw, 3rem);
+    margin-bottom: 35px;
+}
+
+.categorie-navigatie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 auto 50px;
+}
+
+.categorie-navigatie a {
+    padding: 10px 16px;
+    border: 1px solid #00ff32;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.productcategorie {
+    margin: 0 0 55px;
+    scroll-margin-top: 150px;
+}
+
+.productcatalogus .productcategorie h2 {
+    margin: 0 0 10px;
+    text-align: left;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+.categorie-beschrijving {
+    margin: 0 0 22px;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.productraster {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.productkaart {
+    overflow: hidden;
+    border: 1px solid #3b4149;
+    border-radius: 12px;
+    background-color: #2c2f33;
+    box-shadow: 0 5px 16px rgb(0 0 0 / 20%);
+}
+
+.productkaart > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+.productkaart-inhoud {
+    display: flex;
+    flex-direction: column;
+    min-height: 255px;
+    padding: 18px;
+}
+
+.productkaart h3 {
+    margin: 0 0 12px;
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.product-specificaties {
+    margin: 0 0 12px;
+    color: #00ff32;
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+.productcatalogus .productbeschrijving {
+    width: auto;
+    margin: 0 0 18px;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.product-prijs {
+    margin: auto 0 0;
+    color: #fff;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.afbeeldingsvermelding {
+    color: #e0e0e0;
+    font-size: 0.85rem;
+}
+
+.afbeeldingsvermelding a {
+    color: #00ff32;
+}
+
+body.light .categorie-navigatie a {
+    color: #23272e;
+}
+
+body.light .productkaart {
+    border-color: #d0d0d0;
+    background-color: #f3f3f3;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .productraster {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .productcatalogus {
+        width: calc(100% - 24px);
+    }
+
+    .productraster {
+        grid-template-columns: 1fr;
+    }
+
+    .productkaart-inhoud {
+        min-height: 0;
+    }
+
+    .categorie-navigatie {
+        margin-bottom: 35px;
+    }
+}
