@@ -115,3 +115,28 @@
 .dialog-close:hover {
     color: #39ff14;
 }
+
+body.light .newsletter-dialog {
+    background: #ffffff;
+    color: #23272e;
+}
+
+body.light .newsletter-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+body.light .newsletter-eyebrow,
+body.light .newsletter-status {
+    color: #218a10;
+}
+
+body.light .newsletter-dialog h2,
+body.light .dialog-close {
+    color: #23272e;
+}
+
+body.light .newsletter-dialog input {
+    border-color: #b8bec2;
+    background: #f7f8f9;
+    color: #23272e;
+}

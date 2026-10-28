@@ -31,6 +31,20 @@
     color: black;
 }
 
+body.light header {
+    background-color: #f3f3f3;
+}
+
+body.light header .navsystem a,
+body.light #themeToggle {
+    color: #23272e;
+}
+
+body.light .nieuwsbrief-knop {
+    background-color: #ffffff;
+    color: #23272e;
+}
+
 
 body.light h1,
 body.light h2,
@@ -303,6 +317,16 @@ body.light .afbeeldingsvermelding
      .locatie {
          flex-direction: column;
          gap: 20px;
+         align-items: center;
+     }
+
+     .margin {
+         margin-left: 0;
+     }
+
+     .adres {
+         margin-left: 0;
+         text-align: center;
      }
 
      .placeholder-laptop,
@@ -331,7 +355,7 @@ body.light .afbeeldingsvermelding
      }
 
      .locatie iframe {
-         width: 100%;
+         width: calc(100% - 24px);
          max-width: 100%;
          height: 300px;
      }
@@ -496,6 +520,14 @@ body.light .productkaart {
 }
 
 @media only screen and (max-width: 600px) {
+    header {
+        position: static;
+    }
+
+    .margin {
+        margin-left: 0;
+    }
+
     .productcatalogus {
         width: calc(100% - 24px);
     }
